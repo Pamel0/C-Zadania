@@ -1,0 +1,12 @@
+using System;
+class Temperatura
+{
+    static void Main(string[] args)
+    {
+        Console.WriteLine("Wpisz temperaturę w stopniach Celcjusza:");
+        double Celsius = Convert.ToDouble(Console.ReadLine()); ;
+        double Fahrenheit = (Celsius * 9/5) +32;
+        Console.WriteLine("Podane stopnie na Faranhaity: " + Fahrenheit);
+        Console.ReadLine();
+    }
+}
