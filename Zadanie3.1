@@ -1,0 +1,26 @@
+namespace zadanie
+{
+    class Program
+    {
+        private static bool przestepny(int rok)
+        {
+            return ((rok % 4 == 0) && (rok % 100 != 0)) || (rok % 400 == 0);
+        }
+        static void Main(string[] args)
+        {
+            int rok;
+
+            Console.WriteLine("Podaj rok do sprawdzenia.");
+            rok = int.Parse(Console.ReadLine());
+
+            if (przestepny(rok))
+            {
+                Console.WriteLine("Podany rok jest przestepny.");
+            }
+            else
+            {
+                Console.WriteLine("Podany rok nie jest przestepny.");
+            }
+        }
+    }
+}
