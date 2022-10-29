@@ -1,0 +1,27 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Zad_5._1
+{
+    class Program
+    {
+        static void Celciusza(double F)
+        {
+            Console.WriteLine("Temperatura wynosi:  " + (F - 32) / (1.8));
+
+        }
+
+        static void Main(string[] args)
+        {
+            double x;
+            Console.WriteLine("Podaj Temperature w stopniach Fahrenheita");
+            x = double.Parse(Console.ReadLine());
+            Celciusza(x);
+            Console.ReadKey();
+
+        }
+    }
+}
