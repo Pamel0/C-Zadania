@@ -1,0 +1,28 @@
+namespace Zad._5._2
+{
+    class Program
+    {
+        static int Przedzial(int a, int b, int x)
+        {
+
+            if (a < x && x < b) return 1;
+            else return 0;
+        }
+
+        static void Main(string[] args)
+        {
+            int x, y, z;
+
+            Console.WriteLine("Podaj 'a': ");
+            x = int.Parse(Console.ReadLine());
+            Console.WriteLine("Podaj 'b': ");
+            y = int.Parse(Console.ReadLine());
+            Console.WriteLine("Podaj 'x': ");
+            z = int.Parse(Console.ReadLine());
+            if (Przedzial(x, y, z) == 0)
+                Console.WriteLine("x nie nalezy do przedzialu otwartego");
+            else Console.WriteLine("x NALEZY do przedzialu");
+            Console.ReadKey();
+        }
+    }
+}
